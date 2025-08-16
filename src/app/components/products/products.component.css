@@ -199,7 +199,7 @@ height: 222px;
 }
 
 
-@media(max-width:800) {
+@media(max-width:800px) {
 
 
 
@@ -209,6 +209,8 @@ height: 222px;
         display: flex;
     
         justify-content: space-evenly;
+
+        
     
         flex-wrap: wrap;
     
@@ -224,6 +226,24 @@ height: 222px;
       }
 
 
+      .product-card{
+
+
+        width: 302px;
+    
+        height: 400px;
+    
+       
+    
+        position: relative;
+    
+        left: 0px;
+    
+        top: 100px;
+    
+    
+    
+    }
       
 
     
