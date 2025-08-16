@@ -1,0 +1,93 @@
+
+
+.feedbacks{
+
+
+    margin-top: 60px;
+
+    width: 100%;
+    height: 450px;
+
+    background-color: #fcedfe;
+
+}
+
+
+.feedback{
+
+
+    width: 302px;
+
+    height: 344px;
+
+    border-radius: 80px;
+
+    background-color: white;
+
+    margin-left: 100px;
+
+
+
+}
+
+.my-image{
+
+
+    width: 60px;
+    height: 60px;
+    border-radius:30px;
+    background-color: red;
+    display: inline;
+
+}
+
+.username{
+
+
+    font-size: 17px;
+    font-weight: 700;
+    color: #160E4B;
+    display:inline;
+    margin-left: 20px;
+
+
+   
+
+}
+
+.user-data{
+
+
+margin-left: 30px;
+padding-top: 20px;
+
+
+}
+
+
+.comment{
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #757F95;
+
+    
+}
+
+.truncate-multiline {
+    display: -webkit-box;            /* Creates a flexible box */
+    -webkit-box-orient: vertical;    /* Vertical text flow */
+    -webkit-line-clamp: 8;           /* Number of lines to show */
+    overflow: hidden;                /* Hide overflow */
+    text-overflow: ellipsis;         /* Show "..." */
+  }
+  
+
+  .bb{
+
+
+    border-color: transparent !important;
+
+  }
+
+  

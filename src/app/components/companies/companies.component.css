@@ -1,0 +1,64 @@
+
+
+.companies{
+
+
+    width: 80%;
+
+    height: 210px;
+
+    border-radius:20px;
+
+    background-color: #FEEDF7;
+
+    margin-top: 80px;
+
+
+}
+
+.main-companies{
+
+
+    display: flex;
+
+    justify-content: center;
+
+
+}
+
+p{
+
+    font-size: 30px;
+    font-weight: 700;
+    color: #160E4B;
+    margin-top: 30px;
+}
+
+span{
+
+
+    font-size: 30px;
+    font-weight: 700;
+    color: #F82BA9;
+
+}
+
+.my-company{
+
+
+
+    width: 147px;
+    height: 51px;
+}
+
+.flex-companies{
+
+
+display: flex;
+justify-content: space-evenly;
+margin-top: 30px;
+overflow: hidden;
+
+
+
+}

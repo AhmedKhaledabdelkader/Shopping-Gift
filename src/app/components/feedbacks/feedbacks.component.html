@@ -1,0 +1,58 @@
+
+
+<div class="feedbacks">
+
+    <div class="my-feedback">
+
+
+        
+
+
+
+        <p-carousel [value]="feedbacks" [numVisible]="4" [numScroll]="1" [circular]="true"  autoplayInterval="3000" [responsiveOptions]="responsiveOptions">
+            <ng-template let-feedback #item>
+                <div class="bb border border-surface-200 dark:border-surface-700 rounded m-2 p-4">
+                    
+                    <div class="feedback">
+
+
+                        <div class="user-data">
+            
+            
+                            <img [src]="feedback.userImage" alt="" class="my-image" />
+                            <p class="username">{{feedback.username}}</p>
+            
+            
+                        </div>
+            
+                        <hr class="mx-4">
+            
+            
+                        <p class="ms-2 mt-3 comment truncate-multiline">
+            
+
+                            {{feedback.feedback}}
+            
+            
+            
+                        </p>
+            
+                    </div>
+
+
+                </div>
+            </ng-template>
+        </p-carousel>
+
+
+
+
+
+
+
+
+
+
+
+
+

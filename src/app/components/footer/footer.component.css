@@ -1,0 +1,180 @@
+.footer {
+    width: 100%;
+    min-height: 379px;
+    background: url(./../../../../public/footer.png) center/cover no-repeat;
+    position:relative; 
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+
+
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.list-footer {
+    display: flex;
+    justify-content: center;
+    column-gap: 130px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Footer Title */
+.footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.footer-title1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #160E4B;
+}
+
+.footer-title1-special {
+    font-size: 30px;
+    font-weight: 700;
+    color: #F82BA9;
+}
+
+.footer-title2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #757F95;
+    margin-left: 80px;
+}
+
+/* Input Styles */
+.my-input {
+    width: 400px;
+    max-width: 100%;
+    height: 49px;
+    border-radius: 30px;
+    border-color: transparent;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.subscribe-email {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.email-input {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.subscribe-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.my-button {
+    width: 131px;
+    height: 45px;
+    border-radius: 30px;
+    color: white;
+    background-color: #F82BA9;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 585px) {
+    .footer {
+        min-height: 216px;
+        padding: 15px;
+        position: relative;
+        top: 100px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    .list-footer {
+        column-gap: 20px;
+    }
+
+    .footer-title {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .footer-title1,
+    .footer-title1-special {
+        font-size: 22px;
+    }
+
+    .footer-title2 {
+        font-size: 16px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .my-input {
+        width: 100%;
+        
+    }
+
+    .subscribe-email {
+        position: relative;
+        bottom: auto;
+        left: -10%;
+        transform: none;
+    }
+
+    .input-flex {
+    
+        display: flex;
+        justify-content: center;
+        
+    }
+
+
+    .subscribe-button {
+        position: static;
+        margin-top: 10px;
+        
+    }
+
+    .my-button {
+        width: 100%;
+        max-width: 150px;
+        font-size: 13px;
+    }
+}

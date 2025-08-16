@@ -1,0 +1,329 @@
+
+
+
+.my-carousel{
+
+width: 980px;
+
+height: 400px;
+
+
+
+
+
+
+
+}
+
+.my-slider{
+
+
+
+    width: 302px;
+
+    height: 430px;
+
+    border-color: transparent !important;
+    
+
+
+}
+
+.my-image{
+
+width: 100%;
+
+height:272px;
+
+background-color: #FEEDF7;
+
+border-radius: 20px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+
+}
+
+.my-image2{
+
+
+    width: 90%;
+    height:222px;
+
+}
+
+/* This targets the actual button inside the p-button */
+.bg-color .p-button {
+    background-color: #F82BA9 !important;
+    width: 38px;
+    height: 38px;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Ensure the icon is centered and white */
+  .bg-color .p-button-icon {
+    color: white !important;
+    font-size: 1.2rem;
+  }
+  
+
+  .product-title{
+
+
+    font-size: 17px;
+    font-weight: 600;
+
+
+    flex: 1;
+    font-size: 16px;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+
+  }
+
+  .product-price{
+
+
+    font-size: 16px;
+    font-weight: 500;
+    color:rgb(165, 69, 42);
+
+
+  }
+
+  .rate-icon{
+
+
+    color: goldenrod;
+
+
+
+
+}
+
+.my-position{
+
+    position: relative;
+
+    top: -20px;
+
+
+}
+
+.icon-btn {
+    background-color: #8A2BE2; /* Purple color */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+    margin-top: -30px;
+    flex-shrink: 0
+  }
+  .icon-btn:hover {
+    background-color: #7a23cc;
+  }
+
+  .carousel-text{
+
+    width: 301px;
+
+    height: 371;
+
+    margin-top: 80px;
+
+
+  }
+
+
+  .carousel-text p:nth-of-type(1){
+
+
+font-size:17px;
+
+font-weight: 700;
+
+color: #F82BA9;
+
+letter-spacing: 5px;
+
+
+
+  }
+
+  .carousel-text p:nth-of-type(2){
+
+
+    font-size:17px;
+    
+    font-weight: 700;
+    
+    color: black;
+    
+    
+    
+      }
+
+      .carousel-text p:nth-of-type(2) span{
+
+
+        font-size:17px;
+        
+        font-weight: 700;
+        
+        color:#F82BA9;
+        
+        
+        
+          }
+
+      .carousel-text p:nth-of-type(3){
+
+
+        font-size:16px;
+        
+        font-weight: 400;
+        
+        color: #757F95;
+        
+        
+        
+          }
+
+    .carousel-text button{
+
+
+        width: 158px;
+
+        height: 49px;
+
+        border-radius: 10px;
+
+        background-color: #F82BA9;
+
+        color: white;
+
+    font-size: 16px;
+
+    font-weight: 500;
+    border-color: transparent;
+
+    }
+
+    .sliding-product{
+
+
+        display: flex;
+
+        justify-content: space-evenly;
+
+        margin-top: 40px;
+
+        flex-wrap: wrap;
+
+       
+
+
+
+    }
+
+    @media(max-width:575px){
+
+        
+    .sliding-product{
+
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content:center;
+
+        align-items: center;
+
+        margin-top: 20px;
+
+        flex-wrap: nowrap;
+
+
+
+    }
+
+
+    .my-carousel{
+
+        width: 450px !important;
+        
+        height: 400px;
+        
+        
+        
+        
+        
+        
+        
+        }
+        
+        .my-slider{
+        
+        
+        
+            width: 450px;
+        
+            height: 450px;
+        
+            border-color: transparent !important;
+            
+        
+        
+        }
+        
+        .my-image{
+        
+        width: 100%;
+        
+        height:272px;
+        
+        background-color: #FEEDF7;
+        
+        border-radius: 20px;
+        
+        display: flex;
+        
+        justify-content: center;
+        
+        align-items: center;
+        
+        
+        }
+        
+        .my-image2{
+        
+        
+            width: 90%;
+            height:222px;
+        }        
+
+
+
+
+
+    }
