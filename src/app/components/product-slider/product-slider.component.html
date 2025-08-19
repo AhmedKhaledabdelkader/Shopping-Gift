@@ -24,12 +24,20 @@
 
 
 <div class="my-carousel">
+
+    
+<div class="prev-button">
+
+    <button class="my-prev-button" (click)="carousel.navBackward($event)" >❮</button>
+
+</div>
    
     <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="false"  [value]="products"
+    #carousel
     [numVisible]="3" 
     [numScroll]="3"
     [circular]="false"
-    [responsiveOptions]="responsiveOptions">
+    [responsiveOptions]="responsiveOptions" [showNavigators]="false">
         <ng-template pTemplate="item" let-product>
             <div class="border border-surface rounded-border m-2 p-4 my-slider">
                 <div class="mb-4">
@@ -70,6 +78,11 @@
     </p-carousel>
 
 
+    <div class="next-button">
+
+        <button class="my-next-button" (click)="carousel.navForward($event)">❯</button>
+    
+    </div>
 
 
 

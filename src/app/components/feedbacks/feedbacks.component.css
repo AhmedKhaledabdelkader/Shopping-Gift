@@ -8,7 +8,10 @@
     width: 100%;
     height: 450px;
 
-    background-color: #fcedfe;
+    background-image: url(./../../../../public/Birthday\ background.png);
+
+    position: relative;
+    
 
 }
 
@@ -20,11 +23,9 @@
 
     height: 344px;
 
-    border-radius: 80px;
+    border-radius: 60px;
 
     background-color: white;
-
-    margin-left: 100px;
 
 
 
@@ -87,7 +88,111 @@ padding-top: 20px;
 
 
     border-color: transparent !important;
+    position: relative;
+  
+  }
+
+  .my-flex{
+
+    height: 450px;
+
+    display: flex;
+     align-items: center;
+     justify-content:center;
+
+
+  }
+
+
+
+  .my-prev-button{
+
+
+    width:38px;
+    height:38px;
+    background-color:#F82BA9;
+    border-radius:19px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-color: transparent;
+  
+
+  }
+
+  .prev-button{
+
+    
+    position: absolute;
+
+    left: 2%;
+
+    top: 50%;
+  
+    z-index: 1000;
+
+    transform: translateY(-50%);
+
+
+
+  }
+
+  .next-button{
+
+    position: absolute;
+
+    right: 2%;
+    bottom: 40%;
+
+    transform: translateY(-50%);
+
+  }
+
+  .my-next-button{
+
+    width:38px;
+    height:38px;
+    background-color:#F82BA9;
+    border-radius:19px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-color: transparent;
+  }
+
+
+  
+
+ 
+  .feedback-icon{
+
+
+    position: absolute;
+
+    right: 5%;
+
+    bottom: 10%;
+
 
   }
 
   
+  .feedback2-icon{
+
+
+    position: absolute;
+
+    left: 6%;
+
+    bottom: 14%;
+
+
+  }

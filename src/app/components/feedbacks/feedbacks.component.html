@@ -2,16 +2,38 @@
 
 <div class="feedbacks">
 
+
+    <div class="prev-button">
+
+        <button class="my-prev-button" (click)="carousel.navBackward($event)">❮</button>
+    
+    </div>
+
+
     <div class="my-feedback">
 
 
+      
+
+
+        <p-carousel [value]="feedbacks" [numVisible]="4" [numScroll]="1" [circular]="true" 
+         [responsiveOptions]="responsiveOptions"
+          [showNavigators]="false"
+          
+          #carousel>
+
+                            
+         
+            <ng-template let-feedback #item>
+
+          
         
 
+                <div class="my-flex">
 
-
-        <p-carousel [value]="feedbacks" [numVisible]="4" [numScroll]="1" [circular]="true"  autoplayInterval="3000" [responsiveOptions]="responsiveOptions">
-            <ng-template let-feedback #item>
-                <div class="bb border border-surface-200 dark:border-surface-700 rounded m-2 p-4">
+        
+            
+                <div class="bb border border-surface-200 dark:border-surface-700 rounded">
                     
                     <div class="feedback">
 
@@ -36,15 +58,41 @@
             
             
                         </p>
+
+
+                        <div class="feedback2-icon">
+
+                            <img src="feedback-icon2.png" alt="feedback2-icon"/>
+
+                        </div>
+
+                        <div class="feedback-icon">
+
+                            <img src="feedback-icon.png" alt="feedback-icon"/>
+
+                        </div>
             
                     </div>
 
 
                 </div>
+
+            
+
+            </div>
             </ng-template>
         </p-carousel>
 
+    
+    </div>
 
+    <div class="next-button">
+
+        <button class="my-next-button" (click)="carousel.navForward($event)">❯</button>
+    
+    </div>
+
+</div>
 
 
 

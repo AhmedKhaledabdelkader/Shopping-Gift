@@ -7,6 +7,67 @@
 
 }
 
+.gallery-title{
+
+
+    position: relative !important;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+
+.popular-shadow{
+
+
+    width: 300px;
+  
+    height: 30px;
+  
+    border-radius: 30%;
+  
+    background-color:#FEEDF7;
+  
+    position: absolute;
+  
+    top: 50%;
+   
+    z-index: -1;
+
+    margin-left: -6%;
+
+    margin-top: -1%;
+
+    
+  
+   
+  
+  }
+  
+  .popular-shadow2{
+  
+    position: absolute;
+  
+    top: 0%;
+  
+    width: 120px;
+    height: 3px;
+    background-color:#F82BA9;
+  margin-top: 8%;
+  
+  
+  
+  }
+  
+
+
+
+
+
+
 .our-gallery{
 
 font-size: 17px;

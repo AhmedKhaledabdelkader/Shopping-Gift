@@ -160,6 +160,18 @@
 
 }
 
+
+
+
+.carousel{
+
+
+  position: relative;
+
+}
+
+
+
 .main-background{
 
     position: relative;
@@ -692,9 +704,9 @@ left: 10%;
     height: 145px;
     border-radius: 20px;
     background-color: #FEEDF7;
-    position: relative;
+    margin-left: 7%;
 
-    left: 7%;
+    
     display: flex;
 
     justify-content: space-evenly;
@@ -760,6 +772,15 @@ top: 20%;
 
 
 
+
+}
+
+.active{
+
+width: 25px !important;
+height:7px !important;
+border-radius: 47px !important;
+margin-top: 5px !important;
 
 }
 
@@ -1244,9 +1265,7 @@ top: 20%;
                    
                     flex-direction: column;
 
-                    position: relative;
-
-                    left: 11px;
+                    
                     
                     
                 
@@ -1331,6 +1350,21 @@ top: 20%;
  
  @media(max-width:950px){
 
+
+
+  .all-features{
+
+    display: flex !important;
+
+    justify-content: center !important;
+
+    margin-left: -10%;
+
+
+
+
+  }
+ 
 
     .btn1{
 
