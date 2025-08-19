@@ -1,0 +1,30 @@
+<div class="login-modal login-overlay" [ngClass]="{'hidden': !(login_service.isLoginClicked | async)}"
+(click)="closeLogin()">
+    <div class="login-box" (click)="$event.stopPropagation()">
+      <h2>Login To Your Account</h2>
+      
+      <form>
+        <div class="input-group">
+          <input type="email" placeholder="Email" required>
+        </div>
+  
+        <div class="input-group">
+          <input type="password" placeholder="Password" required>
+        </div>
+  
+        <div class="options">
+          <label>
+            <input type="checkbox"> Remind me
+          </label>
+          <a href="#" class="forgot">Forgot Password</a>
+        </div>
+  
+        <div class="signup">
+          No account? <a href="#">Create one here</a>
+        </div>
+  
+        <button type="submit" class="btn-login">Login</button>
+      </form>
+    </div>
+  </div>
+  

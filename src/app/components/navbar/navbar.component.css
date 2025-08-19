@@ -133,6 +133,24 @@ nav{
   
   }
 
+  .login-button{
+
+
+    width: 80px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: #F82BA9;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 500;
+    border-color: transparent;
+
+
+
+
+  }
+
   
 
 @media (max-width: 575px) { 

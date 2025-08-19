@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { LoginService } from '../../services/login.service';
 
 @Component({
   selector: 'app-navbar',
@@ -14,6 +15,20 @@ export class NavbarComponent {
   favourite_number:number=3
 
   cart_number:number=2
+
+
+  login_service=inject(LoginService)
+
+
+  makeLogin(){
+
+    console.log("login clicked");
+    
+
+
+    this.login_service.openLogin()
+
+  }
 
 
 
