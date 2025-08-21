@@ -1,45 +1,33 @@
 
 <div class="main-companies">
-<div class="companies">
-
-    <p class="text-center">Trusted by over <span>4.5k+ </span>companies</p>
-
-    <div class="my-companies">
-
-    <div class="flex-companies">
-
-        <div>
-            <img src="company1.png" alt="Company 1" class="my-company">
-        </div>
-
-        <div>
-            <img src="company2.png" alt="Company 1" class="my-company">
-        </div>
-
-        <div>
-            <img src="company3.png" alt="Company 1" class="my-company">
-        </div>
-
-
-        <div>
-            <img src="company4.png" alt="Company 1" class="my-company">
-        </div>
-
-        <div>
-            <img src="company5.png" alt="Company 1" class="my-company">
-        </div>
-
-        <div>
-            <img src="company6.png" alt="Company 1" class="my-company">
-        </div>
 
 
 
+
+    <div class="companies">
+      <p class="text-center">
+        Trusted by over <span>4.5k+ </span> companies
+      </p>
+
+
+
+
+      <owl-carousel-o [options]="customOptions">
+
+        <ng-container *ngFor="let slide of slidesStore">
+          <ng-template carouselSlide [id]="slide.id">
+            <img [src]="slide.src" alt="my-slide" class="my-company">
+          </ng-template>
+        </ng-container>
+    
+      </owl-carousel-o>
+
+
+
+
+     
+  
     </div>
-
-    </div>
-
-
 </div>
-
-</div>
+  
+  
