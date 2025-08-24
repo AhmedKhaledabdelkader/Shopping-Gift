@@ -154,6 +154,7 @@ button{
   @media (max-width: 600px) {
     .features {
       grid-template-columns: 1fr;
+      padding-left: 10px;
     }
 
     .my-image{
@@ -173,7 +174,7 @@ button{
         
         height: 432px;
         
-        
+        margin-left: 10px;
         
         
         }

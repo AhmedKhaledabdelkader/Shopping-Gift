@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   
   customOptions: OwlOptions = {
     loop: true,
-    margin: 100,
+    margin: 50,
     nav: false,
     dots: false,
     autoplay: true,

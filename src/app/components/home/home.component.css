@@ -494,11 +494,19 @@
     position: relative;
     top: -260px;
     left: 3%;
+    background-color: blue !important;
+  }
+
+  .my-slider-bg{
+
+    position: relative;
   }
 
   .carousel-indicators {
     position: absolute;
     top: 42%;
+    display: flex !important;
+    justify-content: center;
   }
 
   .btn1 {
@@ -669,7 +677,10 @@
     display: flex !important;
     justify-content: center !important;
     margin-left: -10%;
+  
   }
+
+  
 
   .btn1 {
     position: absolute;

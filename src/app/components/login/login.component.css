@@ -80,7 +80,6 @@
     text-decoration: none;
   }
   
-  /* Login button */
   .btn-login {
     width: 100%;
     padding: 12px;
@@ -90,7 +89,6 @@
     color: #fff;
     font-size: 15px;
     font-weight: bold;
-    cursor: pointer;
     transition: 0.3s;
   }
   
@@ -126,4 +124,31 @@
   
 
 
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 15px;
+  }
+
+
+  .validation-message p {
+    color: #e74c3c;  
+    font-size: 13px;
+    margin: 4px 0 0 10px;  
+    text-align: left;   
+  }
+
+
+  .success-message {
+    color: #2e7d32; 
+    font-size: 14px;
+    margin-top: -20px;
+  }
+  
+  .error-message {
+    color: #c62828;
+    font-size: 14px;
+    margin-top: -20px;
   }

@@ -3,13 +3,66 @@
     <div class="login-box" (click)="$event.stopPropagation()">
       <h2>Login To Your Account</h2>
       
-      <form>
-        <div class="input-group">
-          <input type="email" placeholder="Email" required>
+      <form [formGroup]="userForm">
+
+
+        <div *ngIf="successMessage" class="success-message">
+          {{ successMessage }}
         </div>
   
-        <div class="input-group">
-          <input type="password" placeholder="Password" required>
+        <div *ngIf="errorMessage" class="error-message">
+          {{ errorMessage }}
+        </div>
+
+
+
+        <bR>
+        
+        <div class="form-group input-group">
+          <input type="email" placeholder="Email" required formControlName="email">
+
+
+          
+        <div *ngIf="userForm.get('email')?.errors && userForm.get('email')?.touched" class="validation-message">
+
+          <div *ngIf="userForm.get('email')?.getError('required')">
+            <p class="input-validation">email is required</p>
+          </div>
+        
+          <div *ngIf="userForm.get('email')?.getError('email')">
+            <p class="input-validation">email is invalid</p>
+          </div>
+        
+        
+        </div>
+
+
+
+
+
+        </div>
+     
+  
+        <div class="form-group input-group">
+          <input type="password" placeholder="Password" required formControlName="password">
+
+
+          <div *ngIf="userForm.get('password')?.errors && userForm.get('password')?.touched" class="validation-message">
+
+            <div *ngIf="userForm.get('password')?.getError('required')">
+              <p class="input-validation">password is required</p>
+            </div>
+          
+            <div *ngIf="userForm.get('password')?.getError('pattern')">
+              <p class="input-validation">password is invalid</p>
+            </div>
+          
+          
+          </div>
+
+
+
+
         </div>
   
         <div class="options">
@@ -20,10 +73,10 @@
         </div>
   
         <div class="signup">
-          No account? <a href="#">Create one here</a>
+          No account? <a  (click)="login_service.openCreateAccount()">Create one here</a>
         </div>
   
-        <button type="submit" class="btn-login">Login</button>
+        <button type="submit" class="btn-login" [disabled]="button_disabled" (click)="authenticateUser()">Login</button>
       </form>
     </div>
   </div>
